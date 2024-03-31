@@ -1,0 +1,79 @@
+﻿*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#mainContent{
+    width: 65%;
+}
+
+.custom-dropdown {
+    max-width: 800px; /* Açılır pencerenin maksimum genişliği */
+    max-height: 450px; /* Açılır pencerenin maksimum yüksekliği */
+    overflow: auto; /* İçerik fazla ise kaydırma çubuklarını göster */
+}
+
+.comment {
+    z-index: 9999;
+}
+
+.dropdown-item:active {
+    background-color: unset;
+}
+
+.accordion-body {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.accordion-profile {
+    padding-left: 0px;
+    padding-right: 0px;
+    min-height: 600px;
+    max-height: 600px;
+    overflow-y: scroll;
+}
+
+@keyframes border-animation{
+    0%{
+        border-width:0;
+    }
+    100%{
+        border-width:1;
+    }
+}
+
+.menu>li {
+    text-decoration:none;
+    font-size:17px;
+    font-weight:500;
+    position:relative;
+}
+
+.menu>li::before{
+    content:"";
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    border:1px solid #0d6efd;
+    animation : border-animation 0.3 ease forwards;
+    opacity:0;
+    transition : opacity 0.3s ease;
+    pointer-events:none;
+}
+
+.menu>li:hover::before{
+    opacity:1;
+
+}
+
+.note-editable{
+    background:white;
+
+}
+
+.note-icon-caret{
+    display:none;
+}

@@ -1,0 +1,28 @@
+﻿
+@media screen and (max-width: 600px) {
+    #topRightMenu, #leftSideMenu {
+        display: none;
+
+    }
+
+    #mainContent {
+        width:100%;
+        margin: 0px auto;
+
+    }
+
+    .contentUserImage{
+        display:contents;
+    }
+
+    .userImageArea,
+    .contents {
+        width: 100%;
+    }
+
+    #comment {
+        width: calc(100% - 50px);
+    }
+
+}
+
